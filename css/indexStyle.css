@@ -1,0 +1,211 @@
+@font-face {
+  font-family: "Patience";
+  src: url(https://dariuslaprise.com/fonts/Patience.otf) format("opentype");
+}
+
+body{
+	scroll-behavior: smooth;
+	font-family: Helvetica;
+	margin:0px;
+	padding: 0px;
+	position: absolute 0px;
+}
+
+.scrollBox{
+	width:650px;
+	overflow:hidden;
+	display:flex;
+	overflow-x: auto;
+}
+
+
+.header{
+	background-color: #2a6099;
+	padding: 20px;
+	margin-left:0px;
+}
+
+.header p{
+	font-family: Helvetica;
+	color: white;
+	font-size: 80px;
+	margin: 0px;
+	padding-top, padding-bottom: : 10px;
+	padding-left: 7px;
+}
+
+.language{
+	color:white;
+	font-size: 20px;
+	margin:0px;
+	position: absolute;
+	right: 100px;
+	top:55px;
+}
+
+
+.itemTitle{
+	font-family: Didot;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 80px;
+	margin:10px;
+	margin-left:80px;
+	margin-bottom: 100px;
+}
+
+.item{
+	margin-left: 80px;
+	margin-bottom: 200px;
+}
+
+.item h1{
+	font-size: 20px;
+	margin: 0px
+	margin-top:5px;
+}
+
+.item h2{
+	font-size: 10px;
+	margin:0px;
+	font-weight:normal;
+}
+
+.item p{
+	margin-top: 20px;
+	margin-left: 75px;
+	width:500px;
+	text-align: justify;
+}
+
+.hLock{
+	width: 800px;
+	height: auto;
+	image-orientation:from-image;
+}
+
+.scrollImg{
+	height: 800px;
+	image-orientation:from-image;
+	line-height: 800px;
+}
+
+.table{
+	position: fixed;
+	width: 200px;
+	right: 50px;
+	top: 155px;
+}
+
+.table ul, a{
+	list-style-type: none;
+	text-decoration: none;
+	color: black;
+}
+
+.ellipseDiv{
+   position: absolute;
+   border-radius: 50%;
+   top: 55px;
+   right: 300px;
+   display:  flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.ellipseText{
+	color: white;
+	font-size: 50px;
+	margin: 0px;
+
+}
+
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+.gridBox{
+
+	padding: 20px;
+	display: grid;
+	gap: 50px;
+	max-height: 100%;
+	max-width: 100%;
+	justify-items: center;
+	grid-template-columns: 18% 18% 18% 18%;
+
+}
+
+
+/* Grid Elements */
+
+	.gridImg{
+
+		height: 200px;
+		width: auto;
+		grid-column-start: 1;
+	  grid-column-end: 2;
+	  grid-row-start: 1;
+	  grid-row-end: 2;
+
+	  align-items: center;
+	  justify-items: center;
+
+	}
+
+
+.gridTableText{
+
+	color: dodgerblue;
+
+}
+
+.footerDiv{
+	padding-top: 120px;
+	padding-bottom: 40px;
+}
+
+.footerDiv p{
+	text-align: center;
+	font-size: 30;
+	font-style: italic;
+	color: gray;
+}
+
+.footerDiv a p{
+	text-align: center;
+	font-size: 30;
+	font-style: unset;
+	color: gray;
+}
+
+.coeurLink {
+
+	color: red;
+
+}
+
+/* actual keyframes */
+
+@keyframes changerMaker {
+  0% {
+    content: 'Click me!';
+  }
+  
+  100% {
+    content: 'Darius Laprise';
+  }
+}
+.maker::after{
+  content: 'Darius Laprise';
+  animation-name: changerMaker;
+  animation-duration: 2.5s;
+  animation-iteration-count:  infinite;
+}
+
+
+
+
